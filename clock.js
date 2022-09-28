@@ -6,7 +6,10 @@ function getTime() {
     const second = modifyNumber(time.getSeconds());
     document.getElementById("time").innerHTML = hour + ":" + minute + ":" + second;
 }
-
+document.getElementById("button").onclick = function() {
+    document.getElementById("button_output").innerHTML = Math.random();
+    
+}
 function modifyNumber(time) {
     if(parseInt(time)<10) {
         return "0"+time;
